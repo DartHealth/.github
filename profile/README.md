@@ -1,31 +1,43 @@
 ![Dart Health Technology](https://user-images.githubusercontent.com/676428/177885426-153ac2f4-a522-4b17-9b8b-747edf167e60.png)
 
-# [Dart Health Technology](https://www.dart.health/) 
+# [Dart Health Technology](https://www.dart.health/?utm_source=github.com&utm_medium=README) 
 
-## We Provide HIPAA-compliant Data ETL as a Service
+## Dart Health Revolutionizes how Benefits Providers Connect to Employer Data 
 
-The Dart Data Nexus saves months of software development time and expense accommodating antiquated transmission formats, flat files, and HIPAA-compliant data security standards for personally identifiable information (PII) and protected health information (PHI).
+Health and Benefits Providers often face unpredictable data formats that take a long time to implement when onboarding large Employers. We fix those data onboarding challenges with a Data Connection Platform that speeds onboarding and scales with you.
 
-Our instantly deployable SaaS solution allows your teams to move out of the 20th century and start moving at full speed. 
+### With our Data Nexus:
+
+* #### Shorten Onboarding Time by 80%
+
+  Set the right tone with an efficient, predictable process that scales.
+
+* #### Lower IT Costs & Maintenance at Least 30%
+
+  Significantly lower IT costs with a strategic piece for Benefits Providers, now and in the future.
+  
+* #### Start with a Data Model Focused on People
+  
+  Unlock outcomes, accountability, and ROI reporting.
 
 
-## We Raise the Speed Limit on Innovation
+The Dart Data Nexus saves months of software development time and expense. Our quickly-deployable SaaS solution allows your teams to stop dealing with 20th century problems and start moving at full speed for modern healthcare.
 
-We engineered a secure, HIPAA-compliant data processing solution designed specifically for the employer health and benefits market. 
+### Top Data Formats Handled by Data Nexus
+* CSV
+* Pipe-separated data
+* ANSI 834
+* JSON
+* XML/SOAP
+* And more...
 
-The Dart Data Nexus receives data in a variety of formats—from flat files to API data streams—rationalizes it into a standardized data model, and passes it on to downstream systems in the format best suited to their needs. We remove the barriers to entry and take the pain out of supporting multiple data sources so you can focus on what makes your business compete.
-
-**Our smart processing system securely aggregates data and identifies real people** across their many roles as employee, patient, or insured, and it gives you one view of all of their activities within the ecosystem so you can meet their needs. We can also gather data at the aggregate population level to aid in analytics and service improvement recommendations.
-
-Since the Dart Health Data Nexus is an enterprise SaaS solution, your costs are manageable and predictable, even as your business scales.
-
+[Contact us](https://www.dart.health/#Contact) to learn more about our Data Nexus platform.
 
 ## About Us
 
-Our founders have years of experience leading engineering teams in healthtech and martech for a wide range of businesses—from startup to enterprise scale. We developed our Data Nexus solution after years of building and re-building the same tools for multiple employers. We founded Dart Health Technology to speed innovation so future innovators could avoid the normal waste of endless data transformation projects and uncover more opportunities for growth.
+Our founders have years of experience leading engineering teams for some of the most critical names in health. We developed our Data Nexus solution after years of building and re-building the same tools. When we were faced with doing it again, we created the Data Nexus **specifically for the Health and Benefits Industry**, so innovators could avoid the endless waste of data transformation projects and uncover more opportunities for growth.
 
 ---
-
 
 ## Links
 
@@ -34,6 +46,7 @@ Our founders have years of experience leading engineering teams in healthtech an
 
 ### Social Pages
 
-* [GitHub](https://github.com/DartHealth)
-* [LinkedIn](https://www.linkedin.com/company/darthealth/)
-* [Twitter](https://twitter.com/dart_health/)
+* [Open-source libraries, tools, and contributions on GitHub](https://github.com/DartHealth)
+* [Dart Health on LinkedIn](https://www.linkedin.com/company/darthealth/)
+* [Dart Health on Twitter](https://twitter.com/dart_health/)
+* [Dart Health on Crunchbase](https://www.crunchbase.com/organization/dart-health)
