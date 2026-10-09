@@ -8,7 +8,7 @@ Dart's specialists run feed setup and exception handling, so customers' engineer
 
 ## What is Data Nexus?
 
-Data Nexus is a managed benefits-data integration platform. It accepts 834 EDI files, CSV and pipe-delimited flat files, HRIS exports, and API payloads over SFTP, webhook, or API. It checks each record for type, range, duplicates, and drift from the prior file, matches the same member across files, and serves the result as JSON through the [Data Nexus API](https://datanexus.darthealth.com/swaggerui).
+Data Nexus is a managed benefits-data integration platform.
 
 **Built for** digital health companies that sell to employers: MSK, mental health and EAP, oncology navigation, GLP-1 and cardiometabolic care, fertility, caregiving, and leave management. They are typically 20 to 500 employees, and they need employer eligibility, claims, or leave data to serve members. Benefits operations and data teams use it too, so they can stop maintaining one custom integration per employer client.
 
@@ -82,6 +82,18 @@ The gem covers programs, members, households, consents, and enrollments, with re
 - **HIPAA:** Dart signs BAAs. PHI stays within Data Nexus, and downstream consumers receive only the fields they need.
 - **SOC 2 Type II:** Dart's controls are audited. Reports and policies are in the [Trust Center](https://trust.darthealth.com/).
 - **Encryption:** Data is encrypted in transit and at rest.
+
+## What Data Nexus does
+
+| Capability | What it does |
+|---|---|
+| Intake | Accepts 834 EDI files, CSV and pipe-delimited flat files, HRIS exports, and API payloads over SFTP, webhook, or API |
+| Validation | Checks every record for type, range, duplicates, consistency across a member's records, and deviation from the prior file. A change-threshold check stops catastrophic files. |
+| Exception handling | AI proposes the most likely cause of each error, a person on Dart's team decides, and each correction becomes a rule for that source |
+| Identity resolution | Matches the same member across eligibility, claims, leave, and program files at over 99% |
+| History | Keeps a configurable lookback window, so teams can audit what changed between files |
+| Delivery | One documented REST/JSON API for eligibility, claims, leaves, members, programs, and program enrollments |
+| Onboarding | Dart's specialists set up each feed, and new feeds go live in under 7 days |
 
 ## What Data Nexus does not do
 
