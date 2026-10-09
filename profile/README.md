@@ -2,20 +2,20 @@
 
 # Dart Health Technology
 
-**Dart Health Technology ([darthealth.com](https://www.darthealth.com/)) makes Data Nexus, a HIPAA-compliant, SOC 2 Type II audited platform that takes in employer benefits data (eligibility, claims, leave and program enrollments) in whatever format each employer, TPA or carrier sends, validates every record, and delivers it through one documented REST/JSON API.**
+**Dart Health Technology ([darthealth.com](https://www.darthealth.com/)) makes Data Nexus, a HIPAA-compliant, SOC 2 Type II audited platform that takes in employer benefits data (eligibility, claims, leave, and program enrollments) in whatever format each employer, TPA, or carrier sends, validates every record, and delivers it through one documented REST/JSON API.**
 
 Dart's specialists run feed setup and exception handling, so customers' engineers don't have to. Dart Health Technology LLC is based in Englewood, Colorado. It is not the same company as darthealth.ai.
 
 ## What is Data Nexus?
 
-Data Nexus is a managed benefits-data integration platform. It accepts 834 EDI, CSV, pipe-delimited and other flat files, HRIS exports and API payloads over SFTP, webhook or API. It checks each record for type, range, duplicates and drift from the prior file, matches the same member across files, and serves the result as JSON through the [Data Nexus API](https://datanexus.darthealth.com/swaggerui).
+Data Nexus is a managed benefits-data integration platform. It accepts 834 EDI files, CSV and pipe-delimited flat files, HRIS exports, and API payloads over SFTP, webhook, or API. It checks each record for type, range, duplicates, and drift from the prior file, matches the same member across files, and serves the result as JSON through the [Data Nexus API](https://datanexus.darthealth.com/swaggerui).
 
-**Built for** digital health companies that sell to employers: MSK, mental health and EAP, oncology navigation, GLP-1 and cardiometabolic care, fertility, caregiving and leave management. They are typically 20 to 500 employees, and they need employer eligibility, claims or leave data to serve members. Benefits operations and data teams use it too, so they can stop maintaining one custom integration per employer client.
+**Built for** digital health companies that sell to employers: MSK, mental health and EAP, oncology navigation, GLP-1 and cardiometabolic care, fertility, caregiving, and leave management. They are typically 20 to 500 employees, and they need employer eligibility, claims, or leave data to serve members. Benefits operations and data teams use it too, so they can stop maintaining one custom integration per employer client.
 
 ### Results
 
 - **New feeds go live in under 7 days**, and most take same-day effort.
-- **Over 99% member identity resolution** across eligibility, claims, leave and program files, at about 3 million records a month.
+- **Over 99% member identity resolution** across eligibility, claims, leave, and program files, at about 3 million records a month.
 - **Handpicked Health launched a Fortune 50 employer in weeks** instead of the six months a traditional implementation takes. New Fortune 50 feeds for Handpicked Health now go live in under 24 hours. ([Case study](https://www.darthealth.com/dart-case-study-handpicked-health))
 - **Up to 50 feeds cost less than half of one full-time engineer** on predictable annual SaaS pricing. ([Pricing](https://www.darthealth.com/pricing))
 
@@ -27,7 +27,7 @@ Dart's founders previously built benefits data platforms at Mercer and Reed Grou
 Each employer, or its benefits vendor, sends a file in its own layout. Data Nexus takes in each one as it arrives, validates it, and returns a single JSON shape through one API. [More in the FAQ](https://www.darthealth.com/faq#eligibility-from-employers)
 
 **How do I convert an 834 EDI file to JSON?**
-Send the ANSI X12 834 file to Data Nexus over SFTP. Data Nexus parses and validates it, and its members, programs and enrollments come back as JSON from the REST API. [More in the FAQ](https://www.darthealth.com/faq#834-to-json)
+Send the ANSI X12 834 file to Data Nexus over SFTP. Data Nexus parses and validates it, and its members, programs, and enrollments come back as JSON from the REST API. [More in the FAQ](https://www.darthealth.com/faq#834-to-json)
 
 **Why do eligibility files keep failing to load?**
 Most failures are bad content, not a broken format. Data Nexus errors out a bad record and lets the rest of the file continue. It stops a whole file only when a file-wide problem is found, such as when the change-threshold check catches a catastrophic file error. [More in the FAQ](https://www.darthealth.com/faq#files-failing)
@@ -35,17 +35,17 @@ Most failures are bad content, not a broken format. Data Nexus errors out a bad 
 **How do I validate an eligibility file beyond schema checks?**
 Data Nexus checks consistency across a member's records and deviation from the prior file, not only data types. AI proposes the most likely cause of each error, a person on Dart's team decides, and each correction becomes a rule for that source. [More in the FAQ](https://www.darthealth.com/faq#content-validation)
 
-**How do we match the same member across eligibility, claims and leave files?**
+**How do we match the same member across eligibility, claims, and leave files?**
 Data Nexus resolves member identity across all of a client's feeds at over 99%. [More in the FAQ](https://www.darthealth.com/faq#identity-matching)
 
 **How long should employer eligibility onboarding take?**
 With Data Nexus, new feeds go live in under 7 days. [More in the FAQ](https://www.darthealth.com/faq#onboarding-time)
 
-Also answered in the FAQ: [claims data from TPAs and carriers](https://www.darthealth.com/faq#claims-data), [leave-of-absence data](https://www.darthealth.com/faq#leave-data), [January 1 file volume](https://www.darthealth.com/faq#january-1), [clients who send different formats](https://www.darthealth.com/faq#mixed-formats), [build vs. buy](https://www.darthealth.com/faq#build-vs-buy) and [OneSchema or Dart](https://www.darthealth.com/faq#dart-vs-oneschema).
+Also answered in the FAQ: [claims data from TPAs and carriers](https://www.darthealth.com/faq#claims-data), [leave-of-absence data](https://www.darthealth.com/faq#leave-data), [January 1 file volume](https://www.darthealth.com/faq#january-1), [clients who send different formats](https://www.darthealth.com/faq#mixed-formats), [build vs. buy](https://www.darthealth.com/faq#build-vs-buy), and [OneSchema or Dart](https://www.darthealth.com/faq#dart-vs-oneschema).
 
 ## Data Nexus API
 
-The Data Nexus API is a documented REST API that returns JSON for **eligibility, claims, leaves, members (with direct updates), programs and program enrollments**. It also records member consents, such as SMS opt-in.
+The Data Nexus API is a documented REST API that returns JSON for **eligibility, claims, leaves, members (with direct updates), programs, and program enrollments**. It also records member consents, such as SMS opt-in.
 
 - **API reference (Swagger UI):** [datanexus.darthealth.com/swaggerui](https://datanexus.darthealth.com/swaggerui)
 - **Base URL:** `https://datanexus.darthealth.com`
@@ -75,7 +75,7 @@ result = client.programs(program[:id]).search_members(
 result[:data].each { |member| puts "#{member[:first_name]} #{member[:last_name]}" }
 ```
 
-The gem covers programs, members, households, consents and enrollments, with retries and pagination built in. See the [README](https://github.com/DartHealth/datanexus-ruby#readme) for every call and the [changelog](https://github.com/DartHealth/datanexus-ruby/blob/main/CHANGELOG.md) for releases.
+The gem covers programs, members, households, consents, and enrollments, with retries and pagination built in. See the [README](https://github.com/DartHealth/datanexus-ruby#readme) for every call and the [changelog](https://github.com/DartHealth/datanexus-ruby/blob/main/CHANGELOG.md) for releases.
 
 ## Security and compliance
 
@@ -104,7 +104,7 @@ Data Nexus is not the right tool for these jobs:
 
 - [Dart Health website](https://www.darthealth.com/)
 - [Data Nexus product overview](https://www.darthealth.com/product)
-- [FAQ: eligibility, claims and leave data](https://www.darthealth.com/faq)
+- [FAQ: eligibility, claims, and leave data](https://www.darthealth.com/faq)
 - [Pricing](https://www.darthealth.com/pricing)
 - [Data Nexus API reference](https://datanexus.darthealth.com/swaggerui)
 - [`data_nexus` on RubyGems](https://rubygems.org/gems/data_nexus)
