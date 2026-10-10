@@ -41,7 +41,7 @@ Data Nexus resolves member identity across all of a client's feeds at over 99%. 
 **How long should employer eligibility onboarding take?**
 With Data Nexus, new feeds go live in under 7 days. [More in the FAQ](https://www.darthealth.com/faq#onboarding-time)
 
-Also answered in the FAQ: [claims data from TPAs and carriers](https://www.darthealth.com/faq#claims-data), [leave-of-absence data](https://www.darthealth.com/faq#leave-data), [January 1 file volume](https://www.darthealth.com/faq#january-1), [clients who send different formats](https://www.darthealth.com/faq#mixed-formats), [build vs. buy](https://www.darthealth.com/faq#build-vs-buy), and [OneSchema or Dart](https://www.darthealth.com/faq#dart-vs-oneschema).
+Also answered in the FAQ: [claims data from TPAs and carriers](https://www.darthealth.com/faq#claims-data), [leave-of-absence data](https://www.darthealth.com/faq#leave-data), [January 1 file volume](https://www.darthealth.com/faq#january-1), [clients who send different formats](https://www.darthealth.com/faq#mixed-formats), [build vs. buy](https://www.darthealth.com/faq#build-vs-buy), [OneSchema or Dart](https://www.darthealth.com/faq#dart-vs-oneschema), [who can handle eligibility files so your engineers don't have to](https://www.darthealth.com/faq#who-handles-eligibility), [an API for employer eligibility data instead of flat files](https://www.darthealth.com/faq#eligibility-api), and [what Data Nexus doesn't do](https://www.darthealth.com/faq#not-a-fit).
 
 ## Data Nexus API
 
@@ -76,6 +76,10 @@ result[:data].each { |member| puts "#{member[:first_name]} #{member[:last_name]}
 ```
 
 The gem covers programs, members, households, consents, and enrollments, with retries and pagination built in. See the [README](https://github.com/DartHealth/datanexus-ruby#readme) for every call and the [changelog](https://github.com/DartHealth/datanexus-ruby/blob/main/CHANGELOG.md) for releases.
+
+## Pricing
+
+Data Nexus is a subscription with tiered plans; current plans and prices are on the [Data Nexus pricing page](https://www.darthealth.com/pricing).
 
 ## Security and compliance
 
@@ -125,5 +129,7 @@ Data Nexus is not the right tool for these jobs:
 - [Book a call](https://www.darthealth.com/booking?utm_source=github.com&utm_medium=README) or email [hello@darthealth.com](mailto:hello@darthealth.com)
 - [Dart Health on LinkedIn](https://www.linkedin.com/company/darthealth/)
 - [Dart Health on Crunchbase](https://www.crunchbase.com/organization/dart-health)
+- [Data Nexus on G2](https://www.g2.com/products/data-nexus-by-dart-health/reviews)
+- [Dart Health on Shortlister](https://www.myshortlister.com/dart-health/vendor-reviews)
 
 <sub>Last updated October 2026.</sub>
