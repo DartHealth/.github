@@ -14,6 +14,7 @@
 
 - Repo: `~/src/darthealth/.github` (remote `git@github.com:DartHealth/.github.git`). Branch from `origin/main` (at `4325949` or later).
 - Branch name: `briansage/sc-7042/profile-gem-example` (the `sc-7042` links it to the card).
+- Brian's global git config sets `push.default tracking`. Branch with `--no-track` and push with the full `HEAD:refs/heads/<branch>` refspec. A branch that tracks `origin/main` pushes to `main`.
 - Change only the Ruby usage example under `## Ruby gem: \`data_nexus\``. No other wording, links, or sections change.
 - The no-match guard text is exactly `raise "Program not found: Example Program" unless program`. That's the line in the data_nexus 0.3.0 README and CHANGELOG.
 - Never call the real Data Nexus API. Every run uses the stub harness and the fake key `test-key`.
@@ -45,7 +46,7 @@
 ```bash
 cd ~/src/darthealth/.github
 git fetch origin
-git switch -c briansage/sc-7042/profile-gem-example origin/main
+git switch --no-track -c briansage/sc-7042/profile-gem-example origin/main
 
 H="${TMPDIR:-/tmp}/readme-check-sc-7042"
 mkdir -p "$H"
@@ -199,7 +200,7 @@ EOF
 
 ```bash
 cd ~/src/darthealth/.github
-git push -u origin briansage/sc-7042/profile-gem-example
+git push -u origin HEAD:refs/heads/briansage/sc-7042/profile-gem-example
 gh pr create --base main --title "Load the gem and guard the program lookup in the profile's Ruby example (sc-7042)" --body "$(cat <<'EOF'
 ## Summary
 
