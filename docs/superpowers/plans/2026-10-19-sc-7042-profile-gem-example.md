@@ -108,10 +108,10 @@ print block
 ```bash
 H="${TMPDIR:-/tmp}/readme-check-sc-7042"; cd ~/src/darthealth/.github
 ruby "$H/extract_block.rb" profile/README.md '## Ruby gem: `data_nexus`' 2 > "$H/example.rb"
-DATANEXUS_API_KEY=test-key ruby -I "$H/gem/lib" -r "$H/stub_http.rb" "$H/example.rb" 2>&1 | head -1
+out=$(DATANEXUS_API_KEY=test-key ruby -I "$H/gem/lib" -r "$H/stub_http.rb" "$H/example.rb" 2>&1); echo "exit=$?"; printf "%s\n" "$out" | head -1
 ```
 
-Expected: `example.rb:1:in '<main>': uninitialized constant DataNexus (NameError)`
+Expected: `exit=1`, then `example.rb:1:in '<main>': uninitialized constant DataNexus (NameError)`
 
 - [ ] **Step 3: Write the minimal fix**
 
@@ -148,11 +148,11 @@ Leave the rest of the block (the `search_members` arguments and the `result[:dat
 H="${TMPDIR:-/tmp}/readme-check-sc-7042"; cd ~/src/darthealth/.github
 ruby "$H/extract_block.rb" profile/README.md '## Ruby gem: `data_nexus`' 2 > "$H/example.rb"
 DATANEXUS_API_KEY=test-key ruby -I "$H/gem/lib" -r "$H/stub_http.rb" "$H/example.rb"
-DATANEXUS_API_KEY=test-key STUB_PROGRAMS=none ruby -I "$H/gem/lib" -r "$H/stub_http.rb" "$H/example.rb" 2>&1 | head -1
+out=$(DATANEXUS_API_KEY=test-key STUB_PROGRAMS=none ruby -I "$H/gem/lib" -r "$H/stub_http.rb" "$H/example.rb" 2>&1); echo "exit=$?"; printf "%s\n" "$out" | head -1
 ```
 
 Expected, the first command: `Jane Doe`
-Expected, the second command: `example.rb:7:in '<main>': Program not found: Example Program (RuntimeError)`
+Expected, the second command: `exit=1`, then `example.rb:7:in '<main>': Program not found: Example Program (RuntimeError)`
 
 - [ ] **Step 5: Confirm the diff is exactly two added lines plus one blank line**
 
