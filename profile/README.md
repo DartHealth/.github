@@ -61,10 +61,13 @@ gem 'data_nexus'
 ```
 
 ```ruby
+require 'data_nexus'
+
 client = DataNexus::Client.new(api_key: ENV['DATANEXUS_API_KEY'])
 
 # Find a program by name, then check whether someone is an eligible member
 program = client.programs.list(name: 'Example Program').data.first
+raise "Program not found: Example Program" unless program
 
 result = client.programs(program[:id]).search_members(
   born_on: '1980-01-15',
