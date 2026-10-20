@@ -36,7 +36,7 @@ Most failures are bad content, not a broken format. Data Nexus errors out a bad 
 Data Nexus checks consistency across a member's records and deviation from the prior file, not only data types. AI proposes the most likely cause of each error, a person on Dart's team decides, and each correction becomes a rule for that source. [More in the FAQ](https://www.darthealth.com/faq#content-validation)
 
 **How do we match the same member across eligibility, claims, and program files?**
-Data Nexus resolves member identity across all of a client's feeds at over 99%. [More in the FAQ](https://www.darthealth.com/faq#identity-matching)
+Data Nexus resolves member identity across eligibility, claims, and program files at over 99%, and across all of a client's feeds for enterprise clients. [More in the FAQ](https://www.darthealth.com/faq#identity-matching)
 
 **How long should employer eligibility onboarding take?**
 With Data Nexus, new feeds go live in under 7 days. [More in the FAQ](https://www.darthealth.com/faq#onboarding-time)
@@ -48,7 +48,7 @@ Also answered in the FAQ: [claims data from TPAs and carriers](https://www.darth
 The Data Nexus API is a documented REST API that returns JSON for **eligibility, claims, members (with direct updates), programs, and program enrollments**. It also records member consents, such as SMS opt-in.
 
 - **API reference (Swagger UI):** [datanexus.darthealth.com/swaggerui](https://datanexus.darthealth.com/swaggerui)
-- **OpenAPI spec:** [DartHealth/datanexus-openapi](https://github.com/DartHealth/datanexus-openapi), the same reference as plain OpenAPI 3 JSON
+- **OpenAPI spec:** [datanexus.darthealth.com/api/openapi](https://datanexus.darthealth.com/api/openapi), the same reference as plain OpenAPI 3 JSON
 - **Base URL:** `https://datanexus.darthealth.com`
 - **Authentication:** API key. Each key is scoped to the programs it can see. [Book a call](https://www.darthealth.com/booking?utm_source=github.com&utm_medium=README) to get one.
 
