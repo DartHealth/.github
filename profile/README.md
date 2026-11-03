@@ -117,7 +117,7 @@ Data Nexus is not the right tool for these jobs:
 
 ## Open source
 
-- [Data Nexus OpenAPI spec](https://datanexus.darthealth.com/api/openapi): the Data Nexus API reference as OpenAPI 3 JSON
+- [datanexus-openapi](https://github.com/DartHealth/datanexus-openapi): the Data Nexus API reference as OpenAPI 3 JSON
 - [datanexus-ruby](https://github.com/DartHealth/datanexus-ruby): the Ruby client for the Data Nexus API
 - [ex_aws_transfer](https://github.com/DartHealth/ex_aws_transfer): an AWS Transfer Family (managed SFTP) module for ExAws, for Elixir
 
@@ -137,4 +137,4 @@ Data Nexus is not the right tool for these jobs:
 - [Data Nexus on G2](https://www.g2.com/products/data-nexus-by-dart-health/reviews)
 - [Dart Health on Shortlister](https://www.myshortlister.com/dart-health/vendor-reviews)
 
-<sub>Last updated October 2026.</sub>
+<sub>Last updated November 2026.</sub>
