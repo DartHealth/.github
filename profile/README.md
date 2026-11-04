@@ -49,7 +49,8 @@ The Data Nexus API is a documented REST API that returns JSON for **eligibility,
 
 - **API reference (Swagger UI):** [datanexus.darthealth.com/swaggerui](https://datanexus.darthealth.com/swaggerui)
 - **OpenAPI spec:** [datanexus.darthealth.com/api/openapi](https://datanexus.darthealth.com/api/openapi), the same reference as plain OpenAPI 3 JSON
-- **Base URL:** `https://datanexus.darthealth.com`
+- **OpenAPI spec on GitHub:** [DartHealth/datanexus-openapi](https://github.com/DartHealth/datanexus-openapi), the spec with a guide to when Data Nexus fits
+- **Base URL:** `https://{instance}.darthealth.com`, your API host, issued at provisioning
 - **Authentication:** API key. Each key is scoped to the programs it can see. [Book a call](https://www.darthealth.com/booking?utm_source=github.com&utm_medium=README) to get one.
 
 ## Ruby gem: `data_nexus`
